@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link type="text/css" rel="styleSheet"  href="./css/index.css" />
+    <style>
+        .content_box {
+            width: 270px;
+            height: 480px;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #000000;
+            box-shadow: 0px 8px 20px 10px rgba(47, 81, 157, 0.2);
+            margin-right: 40px;
+        }
+
+        .content_body:last-child {
+            margin-right: 0 !important;
+        }
+
+        .content_img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .content_box_title {
+            margin-top: 65px;
+            display: flex;
+            justify-content: center;
+            font-size: 32px;
+        }
+
+        .content_box_con {
+            font-size: 20px;
+            padding: 0 20px;
+        }
+
+        .content_body {
+            margin: 40px 0 100px 0 !important;
+            justify-content: center !important;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="header_box">
+        <div class="header">
+            <div class="header_left">
+                <img src="images/daztenLord.png"  onclick="window.location.href='home.html'">
+            </div>
+            <div class="header_right">
+                <div class="div_hover">
+                    <p onclick="window.location.href='docs.html'">DOCS</p>
+                </div>
+                <div class="div_hover">
+                    <p onclick="window.location.href='join.html'">JOIN US</p>
+                </div>
+                <div>
+                    <p>EN</p>
+                    <img src="images/drop-down.png" style="width: 15px; height: 10px;margin-left: 10px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div>
+            <img src="images/banner.png" style="width: 100%"/>
+        </div>
+        <div class="content_body">
+            <div class="content_box">
+                <div class="content_img">
+                    <img src="images/cloud.png"/>
+                </div>
+                <p class="content_box_title">跨云服务</p>
+                <p class="content_box_con">使用S3存储协议实现跨云存储</p>
+            </div>
+            <div class="content_box">
+                <div class="content_img">
+                    <img src="images/cache.png"/>
+                </div>
+                <p class="content_box_title">高性能缓存</p>
+                <p class="content_box_con">使用内存对热点数据实现高速缓存</p>
+            </div>
+            <div class="content_box">
+                <div class="content_img">
+                    <img src="images/network.png"/>
+                </div>
+                <p class="content_box_title">高速网络</p>
+                <p class="content_box_con">使用RMDA增加网络吞吐降低网络延迟</p>
+            </div>
+            <div class="content_box">
+                <div class="content_img">
+                    <img src="images/store.png"/>
+                </div>
+                <p class="content_box_title">分布式存储</p>
+                <p class="content_box_con">使用EPaxos协议保证跨节点数据一致性</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer_box">
+        <div class="footer">
+            <div class="footer_img">
+                <img src="images/logo_Dark.png">
+            </div>
+            <div class="footer_icon">
+                <img src="images/icon1.png">
+                <img src="images/icon2.png">
+                <img src="images/icon3.png">
+                <img src="images/icon4.png">
+                <img src="images/icon5.png">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
