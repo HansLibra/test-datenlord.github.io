@@ -3,9 +3,11 @@ body{
 }
 
 .main{
-    min-width: 1400px;
+    min-width: 1200px;
+    min-height:100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: visible;
 }
 
 /* header --start*/
@@ -34,8 +36,9 @@ body{
 }
 
 .main .header .header_right p {
-    font-weight: bold;
+    font-weight: 400;
     font-size: 20px;
+    font-family: PingFangSC-Regular, PingFang SC;
 }
 
 .main .header .header_right div {
@@ -45,12 +48,31 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #5C77B2;
+    color: #2F519C;
 }
 
-.main .header .header_right .div_hover:hover {
-    background-color: #5C77B2;
+.main .header .header_right .active {
+    background-color: #2F519C;
     color: #FFFFFF;
+}
+
+.main .header .header_right .active p {
+    font-weight: 600;
+    font-family: PingFangSC-Semibold, PingFang SC;
+}
+
+.datenLord {
+    width: 240px;
+}
+
+.datenLord_logo {
+    display: none;
+}
+
+.header_arrow {
+    width: 15px;
+    height: 10px;
+    margin-left: 10px;
 }
 
 /* header --end*/
@@ -101,4 +123,41 @@ body{
     margin: 40px 360px 100px 360px;
     display: flex;
     justify-content: space-between;
+}
+
+/** 弹框 */
+
+.mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: rgba(0,0,0,.3);
+}
+.model {
+    background-color: #fff;
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.model_back {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.3);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    pointer-events: none;
 }

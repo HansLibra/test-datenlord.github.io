@@ -18,12 +18,7 @@ table,thead,tbody,tr,td,th{
     margin: 0;
 }
 
-body,
-button, input, select, textarea { /* for ie */
-    /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
-    font: 12px/1 "微软雅黑", Tahoma, Helvetica, Arial, sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
-    background: transparent;
-}
+
 button, input, select, textarea {
     font-size: 100%; /* 使得表单元素在 ie 下能继承字体大小 */
     border: none;
@@ -184,6 +179,10 @@ table {
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
+}
+
+h3 {
+    font-size: unset;
 }
 /*禁止文字选中*/
 
