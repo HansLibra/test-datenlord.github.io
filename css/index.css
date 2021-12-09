@@ -43,7 +43,7 @@ body{
 
 .main .header .header_right div {
     cursor: pointer;
-    width: 150px;
+    padding: 0 45px;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -72,8 +72,55 @@ body{
 .header_arrow {
     width: 15px;
     height: 10px;
-    margin-left: 10px;
+    margin-left: 16px;
 }
+
+.lang li:hover {
+    background-color: #2F519C;
+    color: #ffffff !important;
+}
+
+.lang_select {
+    padding: 0 0 0 30px !important;
+    position: relative;
+    width: 90px;
+    box-sizing: border-box;
+}
+
+.lang_select:hover .lang_box{
+    display: block !important;
+}
+
+.lang_select:hover .drop_down {
+    transform: rotate(180deg)
+}
+
+.lang_box {
+    position: absolute;
+    top: 60px;
+    height: auto !important;
+    width: auto !important;
+    background-color: #ffffff;
+    display: none !important;
+    padding: 0 !important;
+    left: 0;
+}
+.lang {
+    width: 90px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.lang li {
+    font-size: 20px;
+    line-height: 40px;
+    color: #2F519C;
+    cursor: pointer;
+}
+
+.github_icon{
+     padding: 0 0 0 30px !important;
+ }
 
 /* header --end*/
 
@@ -103,7 +150,8 @@ body{
     display: flex;
     align-items: center;
     width: 320px;
-    justify-content: space-between;
+    justify-content: flex-end;
+    cursor: pointer;
 }
 
 .footer_icon img{

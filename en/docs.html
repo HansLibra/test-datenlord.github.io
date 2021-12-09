@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DatenLord</title>
-  <link rel="icon" href="./images/favicon.ico" type="image/x-icon"/>
-  <link type="text/css" rel="styleSheet" href="./css/index.css" />
-  <link type="text/css" rel="styleSheet" href="./css/reset.css" />
-  <link type="text/css" rel="styleSheet" href="./css/main.css" />
-  <link rel="stylesheet" href="./css/vs2015.min.css">
-  <script src="./js/highlight.js"></script>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
+  <link type="text/css" rel="styleSheet" href="../css/index.css" />
+  <link type="text/css" rel="styleSheet" href="../css/reset.css" />
+  <link type="text/css" rel="styleSheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/vs2015.min.css">
+  <script src="../js/highlight.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <style>
     .content {
@@ -82,7 +82,7 @@
     }
 
     .quickStart {
-      background: url(./images/quick.png) 100% no-repeat;
+      background: url(../images/quick.png) 100% no-repeat;
       background-size: 100% 100%;
       z-index: 108;
     }
@@ -250,8 +250,8 @@
     <div class="header_box">
       <div class="header">
         <div class="header_left">
-          <img src="images/daztenLord.png" onclick="window.location.href='home.html'" class="datenLord">
-          <img src="images/datenLord_logo.png" onclick="window.location.href='home.html'" class="datenLord_logo">
+          <img src="../images/daztenLord.png" onclick="window.location.href='home.html'" class="datenLord">
+          <img src="../images/datenLord_logo.png" onclick="window.location.href='home.html'" class="datenLord_logo">
         </div>
         <div class="header_right">
           <div class="active">
@@ -261,17 +261,17 @@
             <p onclick="window.location.href='join.html'">JOIN US</p>
           </div>
           <div class="lang_select">
-            <p>中</p>
-            <img src="./images/drop-down.png" class="header_arrow drop_down">
+            <p>EN</p>
+            <img src="../images/drop-down.png" class="header_arrow drop_down">
             <div id="lang" class="lang_box">
               <ul class="lang">
-                <li>中</li>
-                <li onclick="window.location.href='./en/docs.html'">EN</li>
+                <li onclick="window.location.href='../docs.html'">中</li>
+                <li>EN</li>
               </ul>
             </div>
           </div>
           <div class="github_icon">
-            <img src="images/github_icon.png" onclick="window.open('https://github.com/');">
+            <img src="../images/github_icon.png" onclick="window.open('https://github.com/');">
           </div>
         </div>
       </div>
@@ -297,7 +297,7 @@
                     asynchronous programming, and the native Linux asynchronous IO support.</p>
                 </div>
                 <div class="con_right">
-                  <img src="images/2.png" class="con_img">
+                  <img src="../images/2.png" class="con_img">
                 </div>
               </div>
             </div>
@@ -309,7 +309,7 @@
               <h3 style="text-align: center;margin-bottom: 30px" class="box_title">Why do we build DatenLord?</h3>
               <div style="display: flex;justify-content: space-between">
                 <div content="con_left" style="margin: auto 60px auto 0;">
-                  <img src="images/6.png" style="width: 340px;height: 300px">
+                  <img src="../images/6.png" style="width: 340px;height: 300px">
                 </div>
                 <div class="con_right">
                   <p class="text" style="word-break: break-word;word-wrap:break-word; overflow:hidden;">Firstly, the
@@ -344,7 +344,7 @@
                     whereas DatenLord is more for container ecosystems.</p>
                 </div>
                 <div class="con_right" style="align-items: center;margin-left: 60px">
-                  <img src="images/7.png">
+                  <img src="../images/7.png">
                 </div>
               </div>
             </div>
@@ -354,7 +354,7 @@
           <div class="content_box_con">
             <div>
               <h3 style="text-align: center" class="box_title">Architecture</h3>
-              <img src="images/architecture.png" style="height: 584px;width: 1100px">
+              <img src="../images/architecture.png" style="height: 584px;width: 1100px">
               <div style="margin-top: 40px;">
                 <p class="lineHight18">
                   DatenLord is of classical master-slave architecture. To achieve better storage performance, DatenLord
@@ -428,14 +428,14 @@
                 into two main categories:</p>
               <div style="display: flex;justify-content: space-between;width: 100%">
                 <div style="width: 540px; flex-direction: column;align-items: center">
-                  <div style="width: 100%;text-align: center"><img src="images/4.png"
+                  <div style="width: 100%;text-align: center"><img src="../images/4.png"
                       style="width: 320px;height: 220px;margin-bottom: 20px"></div>
                   <p class="lineHight18">Latency-sensitive cases, that DatenLord will coordinate with K8S to schedule
                     containers close to data to minimize latency: Containerized applications, especially stateful
                     applications; Serverless, Lambda, FaaS, etc, event-driven tasks;</p>
                 </div>
                 <div style="width: 540px; flex-direction: column;align-items: center">
-                  <div style="width: 100%;text-align: center"><img src="images/5.png"
+                  <div style="width: 100%;text-align: center"><img src="../images/5.png"
                       style="width: 320px;height: 220px;margin-bottom: 20px"></div>
                   <p class="lineHight18">Throughput-sensitive cases, that DatenLord will pre-load remote data into local
                     clusters to speed up access: AI and big-data jobs, especially training tasks; Multi-cloud storage
@@ -460,7 +460,7 @@
                 </div>
               </div>
               <div class="line_margin40">
-                <img src="./images/quick_line.png">
+                <img src="../images/quick_line.png">
               </div>
               <div style="display: flex;justify-content: space-between">
                 <div style="width: 680px; margin-top: -80px;height: auto;background-color: #000000;border-radius: 8px;">
@@ -514,11 +514,11 @@ kubectl apply -f datenlord-demo.yaml
 
                   </div>
                   <div style="width: 381px;height: 321px;">
-                    <img src="images/jingyu.png" class="jingyu">
+                    <img src="../images/jingyu.png" class="jingyu">
                     <div style="clear: both"></div>
                   </div>
                   <div>
-                    <img src="images/line2.png" style="    position: absolute;margin-top: 20px; margin-left: -228px;">
+                    <img src="../images/line2.png" style="    position: absolute;margin-top: 20px; margin-left: -228px;">
                   </div>
                 </div>
               </div>
@@ -588,7 +588,7 @@ kubectl apply -f datenlord-demo.yaml
         <div class="f5back docs_phone_con">
           <h3 class="margin10" style="margin-top: 20px;margin-bottom: 30px">What is Datenlord ?</h3>
           <div style="width: 100%;text-align: center">
-            <img src="images/2_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
+            <img src="../images/2_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
           </div>
           <p class="text">DatenLord is a next-generation cloud-native distributed storage system, which aims to be
             application-orientated software-defined storage (SDS) platform. On one hand, DatenLord is designed as a
@@ -604,7 +604,7 @@ kubectl apply -f datenlord-demo.yaml
         <div class="ffback docs_phone_con">
           <h3 class="h3_center">Why do we build DatenLord?</h3>
           <div style="width: 100%;text-align: center">
-            <img src="images/6_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
+            <img src="../images/6_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
           </div>
           <p class="text">Firstly, the recent computer hardware architecture revolution stimulates storage software
             refractory. The mainstream SDS systems haven’t changed much in recent 10 years, and at that time hard-disk
@@ -621,7 +621,7 @@ kubectl apply -f datenlord-demo.yaml
             advantage of the storage performance revolution as far as possible, by leveraging non-blocking/asynchronous
             IO, asynchronized programming, NVMe, and even non-volatile memory.</p>
           <div style="width: 100%;text-align: center">
-            <img src="images/7_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
+            <img src="../images/7_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
           </div>
           <p class="text">Secondly, most existing IT systems are computing and storage isolated, that applications and
             storage systems had their dedicated clusters, respectively. This isolated architecture is no longer
@@ -636,7 +636,7 @@ kubectl apply -f datenlord-demo.yaml
         <div class="f5back docs_phone_con">
           <h3 class="h3_center">Architecture</h3>
           <div style="width: 100%;text-align: center">
-            <img src="images/illustrator_mo.png">
+            <img src="../images/illustrator_mo.png">
           </div>
           <p class="lineHight18 text" style="margin-top: 10px!important;">
             DatenLord is of classical master-slave architecture. To achieve better storage performance, DatenLord has a
@@ -696,13 +696,13 @@ kubectl apply -f datenlord-demo.yaml
           <h3 class="h3_center">Target Usage Scenarios</h3>
           <p class="lineHight18 text">DatenLord has several target scenarios, which fall into two main categories:</p>
           <div style="width: 100%;text-align: center">
-            <img src="images/4_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
+            <img src="../images/4_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
           </div>
           <p class="lineHight18">Latency-sensitive cases, that DatenLord will coordinate with K8S to schedule containers
             close to data to minimize latency: Containerized applications, especially stateful applications; Serverless,
             Lambda, FaaS, etc, event-driven tasks;</p>
           <div style="width: 100%;text-align: center">
-            <img src="images/5_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
+            <img src="../images/5_mo.png" style="width: 335px; height: 200px" class="img_margin_10">
           </div>
           <p class="lineHight18">Throughput-sensitive cases, that DatenLord will pre-load remote data into local
             clusters to speed up access: AI and big-data jobs, especially training tasks; Multi-cloud storage unified
@@ -830,10 +830,10 @@ kubectl apply -f datenlord-demo.yaml
     <div class="footer_box">
       <div class="footer">
         <div class="footer_img">
-          <img src="images/logo_Dark.png">
+          <img src="../images/logo_Dark.png">
         </div>
         <div class="footer_icon">
-          <img src="images/icon5.png" onclick="window.open('https://github.com/');">
+          <img src="../images/icon5.png" onclick="window.open('https://github.com/');">
         </div>
       </div>
     </div>
@@ -841,24 +841,24 @@ kubectl apply -f datenlord-demo.yaml
   <div class="model_back" id="tipModel" style="display: none">
     <div class="model">
       <div style="width: auto; text-align: center;">
-        <img src="images/DatenLord_logo_2x.png" style="margin-top: 30px;width: 100px;height: 100px">
+        <img src="../images/DatenLord_logo_2x.png" style="margin-top: 30px;width: 100px;height: 100px">
         <h3 style="color: #000000;margin-bottom: 20px;;font-size: 24px;font-weight: bold">请升级浏览器版本</h3>
         <p>您正在使用旧版本浏览器。请升级浏览器以获得更好的体验。</p>
         <div style="display: inline-block; text-align: center;">
           <div style="display: inline-block;margin: 20px 0 10px 0">
-            <img src="images/chrome.png" style="width: 100px; height: 100px; margin: 10px;">
+            <img src="../images/chrome.png" style="width: 100px; height: 100px; margin: 10px;">
             <p>Chrome</p>
           </div>
           <div style="display: inline-block;margin: 20px 0 10px 0">
-            <img src="images/firefox.png" style="width: 100px; height: 100px; margin: 10px;">
+            <img src="../images/firefox.png" style="width: 100px; height: 100px; margin: 10px;">
             <p>Firefox</p>
           </div>
           <div style="display: inline-block;margin: 20px 0 10px 0">
-            <img src="images/safari.png" style="width: 100px; height: 100px; margin: 10px;">
+            <img src="../images/safari.png" style="width: 100px; height: 100px; margin: 10px;">
             <p>Safari</p>
           </div>
           <div style="display: inline-block;margin: 20px 0 10px 0">
-            <img src="images/edge.png" style="width: 100px; height: 100px; margin: 10px;">
+            <img src="../images/edge.png" style="width: 100px; height: 100px; margin: 10px;">
             <p>Edge</p>
           </div>
         </div>
@@ -866,7 +866,7 @@ kubectl apply -f datenlord-demo.yaml
 
     </div>
   </div>
-  <script type="text/javascript" src="./js/main.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
   <script>isIE();</script>
 </body>
 
