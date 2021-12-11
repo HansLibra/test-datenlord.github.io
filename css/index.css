@@ -151,12 +151,10 @@ body{
     align-items: center;
     width: 320px;
     justify-content: flex-end;
-    cursor: pointer;
 }
 
 .footer_icon img{
-    width: 36px;
-    height: 36px;
+    cursor: pointer;
 }
 
 /* footer --end*/
