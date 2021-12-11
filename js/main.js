@@ -7,3 +7,23 @@ function isIE() {
         document.getElementById('tipModel').style.display = "none";
     }
 }
+
+function clickToEnlargeImg(obj){//放大图片，obj为事件出发Dom节点对象
+    var imgsrc = obj.src;
+    var opacityMask = '<div id="opacityMask" style="display: none"><img class="enlargeImg" src="'+ imgsrc +'" ></div>';
+    $(document.body).append(opacityMask);//底层蒙版
+    toEnlargeImg();//使图片变大
+}
+function toEnlargeImg(){
+var scrollTop = $(window).scrollTop()+20;
+$("#opacityMask").addClass("opacityMask");
+$("#opacityMask").show();
+$("html,body").addClass("none-scroll");//下层不可滑动
+$(".enlargeImg").addClass("enlargeImg");
+$(".enlargeImg").bind("click",clickToSmallImg);
+function clickToSmallImg() {
+    $("html,body").removeClass("none-scroll");
+    $(window).scrollTop(scrollTop);//缩小后恢复到原位
+    $("#opacityMask").remove();
+}
+};

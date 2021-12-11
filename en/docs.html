@@ -11,6 +11,7 @@
   <link type="text/css" rel="styleSheet" href="../css/reset.css" />
   <link type="text/css" rel="styleSheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/vs2015.min.css">
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
   <script src="../js/highlight.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   <style>
@@ -635,7 +636,7 @@ kubectl apply -f datenlord-demo.yaml
         <div class="f5back docs_phone_con">
           <h3 class="h3_center">Architecture</h3>
           <div style="width: 100%;text-align: center">
-            <img src="../images/architecture_mo.png">
+            <img src="../images/architecture_mo.png" onclick="clickToEnlargeImg(this)">
           </div>
           <p class="lineHight18 text" style="margin-top: 10px!important;">
             DatenLord is of classical master-slave architecture. To achieve better storage performance, DatenLord has a
