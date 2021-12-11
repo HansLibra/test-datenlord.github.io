@@ -128,10 +128,12 @@ body{
 
 .main .footer_box {
     width: 100%;
-    height:200px;
+    height: 200px;
     background-color: rgba(0, 0, 0, 1);
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .main .footer{
     width: 1200px;
@@ -155,6 +157,12 @@ body{
 
 .footer_icon img{
     cursor: pointer;
+}
+
+.footer_box .copyright {
+    color:white;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* footer --end*/
